@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School of Science</title>
+    <link rel="stylesheet" href="{% static 'Main.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+    </nav>
+    <div class="login">
+    <form id="sign_in" method="POST">
+        {% csrf_token %}
+        <br>
+        {% for field in form %}
+            <h3><strong>{{ field.label }}</strong></h3>
+            {{ field }}
+        {% endfor %}
+        <br>
+        <input type="submit" value="Enter">
+    </form>
+    <input id="account" type="button" value="Create Account">
+    </div>
+    <script src="{% static 'signin.js' %}"></script>
+</body>
+</html>

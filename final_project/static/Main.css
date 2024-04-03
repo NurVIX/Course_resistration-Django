@@ -1,0 +1,86 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar
+{
+    background-color: #003366;
+}
+
+.navbar a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-bottom: 150px;
+}
+
+.navbar a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+/******************************************************************************/
+
+body
+{
+    background-image: url('https://en.capstonevietnam.com/DATA/CAPSTONEEN/IMAGES/2021/03/02/202103020305CHmercy.edu_20212727092726hudson-hall-2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.login
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.login label,
+.login input[type="text"],
+.login input[type="password"]
+{
+    margin: -5px;
+    width: 234px;
+    border-radius: 10px;
+}
+
+.login input[type="submit"]
+{
+
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+body input[type="button"]
+{
+    margin: 10px 0;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

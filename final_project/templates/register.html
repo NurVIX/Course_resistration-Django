@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School of Science</title>
+    <link rel="stylesheet" href="{% static 'Register.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="scrollable-box" id="courseList">
+       <ul>
+            {% for course in courses %}
+                <li>{{ course }}<input type="checkbox"></li>
+           {% endfor %}
+       </ul>
+    </div>
+
+    <button id="sendButton">></button>
+
+    <div class="scrollable-box" id="selectedCourses">
+        <ul>
+        </ul>
+    </div>
+
+    <form id="form" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script src="{% static 'courses.js' %}"></script>
+<script src="{% static 'add_courses.js' %}"></script>
+</body>
+</html>

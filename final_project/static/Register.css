@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://www.bxtimes.com/wp-content/uploads/2023/08/Screen-Shot-2023-08-24-at-9.56.14-AM-700x482.png");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.scrollable-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.scrollable-box
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 12px;
+    margin-left: 12px;
+    color: white;
+    width: 265px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+#sendButton {
+    margin: 10px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+#selectedCourses li {
+    list-style-type: none;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    height: 55px;
+    width: 55px;
+    color: white;
+    cursor: pointer;
+}
